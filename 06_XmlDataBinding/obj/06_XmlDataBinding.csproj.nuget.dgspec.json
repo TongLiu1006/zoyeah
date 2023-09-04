@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\liujuan\\Test\\06_XmlDataBinding\\06_XmlDataBinding.csproj": {}
+    "D:\\Jane\\zoyeah\\06_XmlDataBinding\\06_XmlDataBinding.csproj": {}
   },
   "projects": {
-    "C:\\liujuan\\Test\\06_XmlDataBinding\\06_XmlDataBinding.csproj": {
+    "D:\\Jane\\zoyeah\\06_XmlDataBinding\\06_XmlDataBinding.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\liujuan\\Test\\06_XmlDataBinding\\06_XmlDataBinding.csproj",
+        "projectUniqueName": "D:\\Jane\\zoyeah\\06_XmlDataBinding\\06_XmlDataBinding.csproj",
         "projectName": "06_XmlDataBinding",
-        "projectPath": "C:\\liujuan\\Test\\06_XmlDataBinding\\06_XmlDataBinding.csproj",
-        "packagesPath": "C:\\Users\\wxhfc\\.nuget\\packages\\",
-        "outputPath": "C:\\liujuan\\Test\\06_XmlDataBinding\\obj\\",
+        "projectPath": "D:\\Jane\\zoyeah\\06_XmlDataBinding\\06_XmlDataBinding.csproj",
+        "packagesPath": "C:\\Users\\86183\\.nuget\\packages\\",
+        "outputPath": "D:\\Jane\\zoyeah\\06_XmlDataBinding\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\software\\Vistual_Studio_SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\wxhfc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\86183\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -58,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -8,7 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             
         </Grid.RowDefinitions>
@@ -56,19 +57,19 @@
             <StackPanel>
                 <TextBlock FontSize="18" FontWeight="Bold" Margin="10"
     HorizontalAlignment="Center">XML Data Source Sample</TextBlock>
-                <ListBox
+                <!--<ListBox
     Width="400" Height="300" Background="Honeydew">
                     <ListBox.ItemsSource>
                         <Binding Source="{StaticResource InventoryData}"
                XPath="*[@Stock='out'] | *[@Number>=8 or @Number=3]"/>
-                    </ListBox.ItemsSource>
+                    </ListBox.ItemsSource>-->
 
                     <!--Alternatively, you can do the following. -->
-                    <!--<ListBox Width="400" Height="300" Background="Honeydew"
+                    <ListBox Width="400" Height="300" Background="Honeydew"
       ItemsSource="{Binding Source={StaticResource InventoryData},
-      XPath=*[@Stock\=\'out\'] | *[@Number>\=8 or @Number\=3]}">-->
+      XPath=*[@Stock\=\'out\'] | *[@Number>\=8 or @Number\=3]}">
 
-                    <ListBox.ItemTemplate>
+                    <!--<ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock FontSize="12" Foreground="Red">
                                 <TextBlock.Text>
@@ -76,7 +77,7 @@
                                 </TextBlock.Text>
                             </TextBlock>
                         </DataTemplate>
-                    </ListBox.ItemTemplate>
+                    </ListBox.ItemTemplate>-->
                 </ListBox>
             </StackPanel>
         </StackPanel>
@@ -88,7 +89,7 @@
                         <Inventory xmlns="">
                             <colors>
 
-                                <color name="Pink">Pink</color>
+                                <color name="Pink"></color>
 
                                 <color name="Red">Red</color>
 
@@ -113,34 +114,35 @@
 
 
             <TextBlock Width="248" Height="24" Text="XML数据绑定:"
-
         TextWrapping="Wrap"/>
 
-            <ListBox x:Name="listXmlColor" Width="248" Height="56" IsSynchronizedWithCurrentItem="True">
-                <ListBox.ItemsSource>
+            <ListBox x:Name="listXmlColor" Width="400" Height="300" Background="Honeydew" IsSynchronizedWithCurrentItem="True"
+                     ItemsSource="{Binding  Source={ StaticResource MyColors},XPath=color }"
+                     >
+                <!--<ListBox.ItemsSource>
 
                     <Binding Source="{StaticResource MyColors}"
-                             XPath="*"/>
-                </ListBox.ItemsSource>
+                             XPath="color"/>
+                </ListBox.ItemsSource>-->
 
 
-                <ListBox.ItemTemplate>
+                <!--<ListBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock FontSize="12" Foreground="Red">
                             <TextBlock.Text>
-                                <Binding XPath="*"/>
+                                <Binding XPath="@name"/>
                             </TextBlock.Text>
                         </TextBlock>
-                        
+
                     </DataTemplate>
-                    
-                </ListBox.ItemTemplate>
+
+                </ListBox.ItemTemplate>-->
 
 
             </ListBox>
 
-            
-            
+
+
             <!--<TextBlock Width="248" Height="24" Text="选中的颜色:" />
 
             <TextBlock Width="248" Height="24" Text="{Binding ElementName=listXmlColor,  Path=SelectedValue, Mode=OneWay}"
@@ -151,6 +153,25 @@
 
             <!--</TextBlock>-->
         </StackPanel>
-        
+
+        <StackPanel Grid.Row="2">
+            <StackPanel.Resources>
+                <XmlDataProvider x:Key="MyColors1" XPath="Inventory/colors" Source="/colors.xml"/>
+            </StackPanel.Resources>
+
+            <StackPanel>
+                <TextBlock Width="248" Height="24" Text="XML数据绑定:"
+        TextWrapping="Wrap"/>
+
+                <ListBox x:Name="listXmlColor1" Width="248" Height="56" Background="Honeydew" IsSynchronizedWithCurrentItem="True"
+                         ItemsSource="{Binding Source={StaticResource MyColors1},XPath=color}"
+                         />
+                <!--<TextBlock Width="248" Height="24" Text="选中的颜色:" />
+
+                <TextBlock Width="248" Height="24" Text="{Binding ElementName=listXmlColor1,  Path=SelectedValue, Mode=OneWay}"
+
+                     />-->
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
