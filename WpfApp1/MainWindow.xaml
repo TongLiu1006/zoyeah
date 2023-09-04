@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+       
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="313*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="57*"/>
+        </Grid.RowDefinitions>
+
+
+        <Canvas Grid.Row="0">
+            <Ellipse Name="ellipseRed" Fill="Red" Width="100" Canvas.Left="56" Height="60"
+                     Canvas.Top="98" local:TurnoverManager.Angle="{Binding ElementName=sliderAngle,Path=Value}"/>
+
+           
+
+
+
+            <Rectangle Name="ellipseBlue" Fill="Blue" Width="80" Height="80" Canvas.Left="285"
+
+                       Canvas.Top="171" local:TurnoverManager.Angle="45" />
+
+            <Button  Name="btnWelcome" Content="欢迎光临" Canvas.Left="265" Canvas.Top="48" FontSize="20" local:TurnoverManager.Angle="60"/>
+
+
+        </Canvas>
+
+
+        <WrapPanel Grid.Row="1">
+            <Label Content="角度大小"/>
+            <Slider  x:Name="sliderAngle" Minimum="0" Maximum="240" Width="300"/>
+        </WrapPanel>
+
+        <Viewbox Grid.Row="2">
+            <TextBlock Text="{Binding ElementName=winReadOnly, Path=Counter}" />
+        </Viewbox>
+
+    </Grid>
+</Window>

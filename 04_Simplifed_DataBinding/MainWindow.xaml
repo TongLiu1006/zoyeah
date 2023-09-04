@@ -1,0 +1,36 @@
+﻿<Window x:Class="_04_Simplifed_DataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_04_Simplifed_DataBinding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="138"/>
+
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Width="248" Height="24" Text="stock name ：" TextWrapping="Wrap"/>
+            <ListBox x:Name="listStockName" Width="248" Height="56">
+                <ListBoxItem Content="全通教育"/>
+                <ListBoxItem Content="大智慧"/>
+                <ListBoxItem Content="宝钢股份"/>
+                <ListBoxItem Content="浦发银行"/>
+                <ListBoxItem Content="工商银行"/>
+                <ListBoxItem Content="中国建筑"/>
+                <ListBoxItem Content="中国南车"/>
+
+            </ListBox>
+
+            <TextBlock Width="248" Height="24" Text="which stock is you choose:"/>
+            <TextBlock Width="248" Height="24" Text="{Binding ElementName=listStockName,Path=SelectedItem.Content}"/>
+
+        </StackPanel >
+
+    </Grid>
+</Window>
