@@ -1,5 +1,12 @@
 # zoyeah
 
+
+9.5
+
+https://learn.microsoft.com/zh-cn/ef/core/get-started/overview/first-app?tabs=visual-studio
+https://www.cnblogs.com/chillsrc/p/4826388.html
+CSDN about MYSQL ODBC
+
 9.4
 
 https://www.cnblogs.com/chillsrc/p/4739494.html &&

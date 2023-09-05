@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "07_ObjectDataProvider/1.0.0": {
+        "dependencies": {
+          "WpfLibrary1": "1.0.0"
+        },
+        "runtime": {
+          "07_ObjectDataProvider.dll": {}
+        }
+      },
+      "WpfLibrary1/1.0.0": {
+        "runtime": {
+          "WpfLibrary1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "07_ObjectDataProvider/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WpfLibrary1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
