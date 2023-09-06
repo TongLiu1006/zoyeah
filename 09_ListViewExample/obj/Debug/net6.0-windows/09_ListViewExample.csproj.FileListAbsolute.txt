@@ -64,3 +64,5 @@ C:\liujuan\zoyeah\09_ListViewExample\bin\Debug\net6.0-windows\runtimes\win-arm64
 C:\liujuan\zoyeah\09_ListViewExample\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\liujuan\zoyeah\09_ListViewExample\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\liujuan\zoyeah\09_ListViewExample\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\liujuan\zoyeah\09_ListViewExample\bin\Debug\net6.0-windows\MySqlConnector.dll
+C:\liujuan\zoyeah\09_ListViewExample\bin\Debug\net6.0-windows\Pomelo.EntityFrameworkCore.MySql.dll

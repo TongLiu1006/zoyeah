@@ -28,7 +28,7 @@
             </ListBox>
 
             <TextBlock Width="248" Height="24" Text="which stock is you choose:"/>
-            <TextBlock Width="248" Height="24" Text="{Binding ElementName=listStockName,Path=SelectedItem.Content}"/>
+            <TextBlock Width="248" Height="24" Text="{ Binding  ElementName=listStockName,Path=SelectedItem.Content}"/>
 
         </StackPanel >
 

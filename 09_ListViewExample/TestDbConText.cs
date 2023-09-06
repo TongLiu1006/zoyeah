@@ -13,15 +13,23 @@ namespace _09_ListViewExample
     public class TestDbConText : DbContext
     {
         public DbSet<S_Info> S_info { get; set; }
-        public string DbPath { get; }
-        public TestDbConText()
+        
+
+        //public TestDbConText()
+        //{
+        //    var folder = Environment.SpecialFolder.LocalApplicationData;
+        //    var path = Environment.GetFolderPath(folder);
+        //    DbPath = System.IO.Path.Join(path, "mydbs.db");
+        //}
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var folder = Environment.SpecialFolder.LocalApplicationData;
-            var path = Environment.GetFolderPath(folder);
-            DbPath = Path.Join(path, "mydbs.db");
+
+            var connectionString = "Server=127.0.0.1;Database=mydbs;Uid=root;Pwd='';";
+            optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+
 
         }
 
-        
+
     } 
 }

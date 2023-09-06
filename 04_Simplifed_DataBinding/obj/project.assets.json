@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\liujuan\\Test\\04_Simplifed_DataBinding\\04_Simplifed_DataBinding.csproj",
+      "projectUniqueName": "C:\\liujuan\\zoyeah\\04_Simplifed_DataBinding\\04_Simplifed_DataBinding.csproj",
       "projectName": "04_Simplifed_DataBinding",
-      "projectPath": "C:\\liujuan\\Test\\04_Simplifed_DataBinding\\04_Simplifed_DataBinding.csproj",
+      "projectPath": "C:\\liujuan\\zoyeah\\04_Simplifed_DataBinding\\04_Simplifed_DataBinding.csproj",
       "packagesPath": "C:\\Users\\wxhfc\\.nuget\\packages\\",
-      "outputPath": "C:\\liujuan\\Test\\04_Simplifed_DataBinding\\obj\\",
+      "outputPath": "C:\\liujuan\\zoyeah\\04_Simplifed_DataBinding\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wxhfc\\AppData\\Roaming\\NuGet\\NuGet.Config",

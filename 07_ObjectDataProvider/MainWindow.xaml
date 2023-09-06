@@ -3,12 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:_07_ObjectDataProvider.Services"
+        xmlns:local="clr-namespace:_07_ObjectDataProvider"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <!--DataContxt-->
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
     <Grid>
         <StackPanel>
-            <StackPanel.Resources>
+            <!--<StackPanel.Resources>
                 <ObjectDataProvider x:Key="studnets" ObjectType="{x:Type local:StudentService}" MethodName="GetStudentList"/>
                 <DataTemplate x:Key="studentLayout" DataType="students">
                     <StackPanel Orientation="Horizontal">
@@ -27,18 +31,46 @@
                 </DataTemplate>
             
             
+            </StackPanel.Resources>-->
+            <StackPanel.Resources>
+                <local:MainViewModel x:Key="mainviewmodel"/>
+               
+
             </StackPanel.Resources>
 
-            <TextBlock Width="248" Height="24" Text="对象数据绑定" TextWrapping="Wrap"/>
+            <StackPanel>
 
-            <ListBox x:Name="listObject" Width="450" Height="100" IsSynchronizedWithCurrentItem="True"
-                     ItemsSource="{Binding Source={StaticResource  studnets}}"
-                     ItemTemplate="{DynamicResource studentLayout}"
-                     
-                     >
-                
-            </ListBox>
+                <TextBlock Width="248" Height="24" Text="对象数据绑定" TextWrapping="Wrap"/>
+
+                <!--<ListBox x:Name="listObject" Width="450" Height="100" IsSynchronizedWithCurrentItem="True"
+         ItemsSource="{Binding Source={StaticResource  studnets}}"
+         ItemTemplate="{DynamicResource studentLayout}"
+         
+         >
+
+                </ListBox>-->
+                <!--<ListBox x:Name="listbox"  ItemsSource="{Binding Source={StaticResource mainviewmodel },Path=list}"  Width="450" Height="100" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}"/>
+                            
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>-->
+
+            </StackPanel>
+
+            
             
         </StackPanel>
+    
+    
+    
+   
+    
+        
+    <ListBox ItemsSource="{Binding Path=list}" DisplayMemberPath="Name"></ListBox>
+        
     </Grid>
+
 </Window>

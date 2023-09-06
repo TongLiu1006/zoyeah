@@ -9,9 +9,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0">
             <TextBlock Width="248" Height="24" Text="stock Name:" TextWrapping="Wrap"
@@ -76,7 +76,7 @@
 
                 <DataTemplate x:Key="studentLayout" >
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding Path=Name}"
+                        <TextBlock Text="{Binding Name}"
 
                             FontWeight="Bold" Foreground="Blue"/>
 
@@ -94,14 +94,7 @@
 
                     </StackPanel>
                 </DataTemplate>
-                <!--<CollectionViewSource x:Key="studentsView" Source="{Binding Source={StaticResource studentLayout}}" >
-                    <CollectionViewSource.SortDescriptions>
-                        <scm:SortDescription PropertyName="Name" Direction="Ascending" />
-                        <scm:SortDescription PropertyName="Age" Direction="Descending"/>
-
-                    </CollectionViewSource.SortDescriptions>
-                    
-                </CollectionViewSource>-->
+               
 
                 <CollectionViewSource x:Key="studentsView"  Source="{Binding Source={StaticResource studens}}">
 
@@ -120,6 +113,7 @@
             
 
             <StackPanel>
+                <!--one way to show data-->
                 <ListBox Width="248" Height="68" IsSynchronizedWithCurrentItem="True"
                         ItemsSource="{Binding Source={StaticResource studens}}"
                          ItemTemplate="{DynamicResource studentLayout}"
@@ -128,13 +122,14 @@
                     
                 </ListBox>
 
+                <!--another way to show data-->
                 <TextBlock Width="248" Height="24" Text="数据排序:"
 
         TextWrapping="Wrap"/>
 
-                <DataGrid DataContext="{StaticResource studentsView}" AutoGenerateColumns="False"   
+                <DataGrid  AutoGenerateColumns="False"   ItemsSource="{Binding Source={StaticResource studentsView}}"
 
-                ItemsSource="{Binding}" CanUserAddRows="False">
+                 CanUserAddRows="False">
 
 
 

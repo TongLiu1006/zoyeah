@@ -20,9 +20,21 @@ namespace _07_ObjectDataProvider
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+        //private List<StudentTest> list=new List<StudentTest> { new StudentTest("zangsan", "13"), new StudentTest("wangwu", "34") };
+
+
+
         public MainWindow()
         {
             InitializeComponent();
+            
+            //listbox.ItemsSource = list;
+
+         
+
         }
+
+       
     }
 }

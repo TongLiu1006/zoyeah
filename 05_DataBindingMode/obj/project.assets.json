@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\liujuan\\Test\\05_DataBindingMode\\05_DataBindingMode.csproj",
+      "projectUniqueName": "C:\\liujuan\\zoyeah\\05_DataBindingMode\\05_DataBindingMode.csproj",
       "projectName": "05_DataBindingMode",
-      "projectPath": "C:\\liujuan\\Test\\05_DataBindingMode\\05_DataBindingMode.csproj",
+      "projectPath": "C:\\liujuan\\zoyeah\\05_DataBindingMode\\05_DataBindingMode.csproj",
       "packagesPath": "C:\\Users\\wxhfc\\.nuget\\packages\\",
-      "outputPath": "C:\\liujuan\\Test\\05_DataBindingMode\\obj\\",
+      "outputPath": "C:\\liujuan\\zoyeah\\05_DataBindingMode\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wxhfc\\AppData\\Roaming\\NuGet\\NuGet.Config",
