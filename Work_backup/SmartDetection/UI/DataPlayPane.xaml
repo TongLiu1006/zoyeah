@@ -1,0 +1,118 @@
+﻿<UserControl x:Class="SmartDetection.UI.DataPlayPane"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SmartDetection.UI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="1366">
+    <Grid Background="WhiteSmoke">
+        <TabControl x:Name="tabControl" Margin="5" TabStripPlacement="Top" SelectionChanged="TabSelectionChanged" >
+            <TabControl.Resources>
+                <Style TargetType="TabItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <Border Name="Border" BorderThickness="1,1,1,0" BorderBrush="Blue" CornerRadius="4,4,0,0" Margin="2,0">
+                                    <ContentPresenter x:Name="ContentSite"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        ContentSource="Header"
+                                        Margin="10,2"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter TargetName="Border" Property="Background" Value="LightSkyBlue" />
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="False">
+                                        <Setter TargetName="Border" Property="Background" Value="GhostWhite" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TabControl.Resources>
+            <TabItem Header="回放分析信息录入" Name="TabBridge" Width="180" Height="35" FontSize="18" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="85"></RowDefinition>
+                        <RowDefinition Height="45"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+                    <Grid  Grid.Row="0">
+                        <GroupBox Header="请设置查询条件"  BorderThickness="2" BorderBrush="DarkGray" VerticalContentAlignment="Center">
+                            <GroupBox.Content>
+                                <WrapPanel Orientation="Horizontal">
+                                    <Label Content="日期:" VerticalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                                    <TextBox x:Name="sDateBox" Width="100" Height="35" FontSize="16" VerticalContentAlignment="Center"></TextBox>
+                                    <Label Content="班组:" VerticalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                                    <TextBox x:Name="sGroupBox" Width="100" Height="35" FontSize="16" VerticalContentAlignment="Center"></TextBox>
+                                    <Label Content="线名:" VerticalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                                    <TextBox x:Name="sLineBox" Width="100" Height="35" FontSize="16" VerticalContentAlignment="Center"></TextBox>
+                                    <Label Content="行别:" VerticalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                                    <TextBox x:Name="sUpdownBox" Width="100" Height="35" FontSize="16" VerticalContentAlignment="Center" ></TextBox>
+                                    <Button Content="查询" Margin="1,0,1,0"  Width="80" Height="50"   Effect="{DynamicResource Effect_Menu}"  Style="{StaticResource ButtonStyle_ShapeRectButton}" Uid ="\images\closeWin.png" Background="#FAFAFB"></Button>
+                                </WrapPanel>
+                            </GroupBox.Content>
+                        </GroupBox>
+                    </Grid>
+                    <!--<Grid Grid.Row="1">
+                        <WrapPanel  Orientation="Horizontal">
+                            <Label Content="铁路局:" VerticalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                            <Label x:Name="sLocalBox" Width="100" Height="45"></Label>
+                            <Label Content="工务段:" VerticalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                            <Label x:Name="sSegmentBox" Width="100" Height="45"></Label>
+
+                            <Label Content="探伤车间:" VerticalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                            <Label x:Name="sNumberBox" Width="100" Height="45"></Label>
+                            <Label Content="探伤工区:" VerticalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                            <Label x:Name="sAreaBox" Width="100" Height="45"></Label>
+                            <Label Content="探伤班组:" VerticalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                            <Label x:Name="sTeamBox" Width="100" Height="45"></Label>
+                            <Label Content="制表人:" VerticalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                            <Label x:Name="sPersonBox" Width="100" Height="45"></Label>
+                            <Label Content="制表时间:" VerticalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                            <Label x:Name="sTimeBox" Width="100" Height="45"></Label>
+                        </WrapPanel>
+                    </Grid>-->
+                    <Grid Grid.Row="1">
+                        <DataGrid   CanUserAddRows="false"  Background="White" AutoGenerateColumns="False" ItemsSource="{Binding}" FontSize="14" HorizontalContentAlignment="Center" Name="StationData" 
+                       SelectionUnit="FullRow" VerticalScrollBarVisibility="Visible">
+                            <DataGrid.RowStyle>
+                                <Style TargetType="DataGridRow">
+                                    <Setter Property="Height" Value="35" />
+                                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                    <Setter Property="VerticalContentAlignment" Value="Center" />
+                                </Style>
+                            </DataGrid.RowStyle>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="序号" Binding="{Binding id, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  Width="60" />
+                                <DataGridTextColumn Header="日期" Binding="{Binding lineNo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="80"></DataGridTextColumn>
+                                <DataGridTextColumn Header="班组" Binding="{Binding upDown, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="100"></DataGridTextColumn>
+                                <DataGridTextColumn Header="工作内容" Binding="{Binding stationNo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="100"></DataGridTextColumn>
+                                <DataGridTextColumn Header="线名" Binding="{Binding stationName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120"></DataGridTextColumn>
+                                <DataGridTextColumn Header="线别" Binding="{Binding cPoint, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="100"></DataGridTextColumn>
+                                <DataGridTextColumn Header="行别" Binding="{Binding cPoint, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="100"></DataGridTextColumn>
+                                <DataGridTextColumn Header="起点里程" Binding="{Binding cPoint, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="100"></DataGridTextColumn>
+                                <DataGridTextColumn Header="终点里程" Binding="{Binding cPoint, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="100"></DataGridTextColumn>
+                                <DataGridTextColumn Header="钢轨(Km)" Binding="{Binding cPoint, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="100"></DataGridTextColumn>
+                                <DataGridTextColumn Header="备注" Binding="{Binding cPoint, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="150"></DataGridTextColumn>
+                                <DataGridTextColumn Header="探伤文件" Binding="{Binding cPoint, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="*" ></DataGridTextColumn>
+                                <DataGridTextColumn Header="回放人员安排" Binding="{Binding cPoint, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="*" ></DataGridTextColumn>
+
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="伤损报警录入" Name="TabAlert" Width="160" Height="35" FontSize="18" >
+            </TabItem>
+            <TabItem Header="历史数据追溯" Name="TabResult" Width="160" Height="35" FontSize="18" >
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</UserControl>

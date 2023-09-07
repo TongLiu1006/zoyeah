@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDb1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CJ">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="XueHao" Type="nchar" MaxLength="8" />
+    <Property Name="KCBianMa" Type="nchar" MaxLength="3" />
+    <Property Name="XueNianXueQi" Type="nchar" MaxLength="11" />
+    <Property Name="XiuDuLeiBie" Type="nvarchar" MaxLength="10" />
+    <Property Name="ChengJi" Type="int" />
+    <Property Name="BeiZhu" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KC">
+    <Key>
+      <PropertyRef Name="KCBianMa" />
+    </Key>
+    <Property Name="KCBianMa" Type="nchar" MaxLength="3" Nullable="false" />
+    <Property Name="KCMingCheng" Type="nvarchar" MaxLength="50" />
+    <Property Name="KCLeiBie" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="XueHao" />
+    </Key>
+    <Property Name="XueHao" Type="nchar" MaxLength="8" Nullable="false" />
+    <Property Name="XingMing" Type="nvarchar" MaxLength="50" />
+    <Property Name="XingBie" Type="nchar" MaxLength="1" />
+    <Property Name="ChuShengRiQi" Type="date" />
+    <Property Name="ZhaoPian" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="MyDb1ModelStoreContainer">
+    <EntitySet Name="CJ" EntityType="Self.CJ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KC" EntityType="Self.KC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,239 @@
+﻿<local:BaseWindow
+    x:Class="SmartDetection.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SmartDetection.UI"
+    xmlns:local1="clr-namespace:SmartDetection.UI"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="1566"
+    Height="768"
+    Style="{StaticResource MyWindowStyle}"
+    WindowState="Maximized"
+    mc:Ignorable="d">
+    <Grid Margin="0,0,0,0" Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="66" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="276" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition
+                    Width="160"
+                    MinWidth="160"
+                    MaxWidth="160" />
+            </Grid.ColumnDefinitions>
+            <WrapPanel
+                Grid.Column="0"
+                HorizontalAlignment="Left"
+                Orientation="Horizontal">
+                <Image
+                    x:Name="logo"
+                    Width="276"
+                    Height="66"
+                    Margin="5,0,0,0"
+                    Source="Assets/logo.png" />
+            </WrapPanel>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                </Grid.ColumnDefinitions>
+                <Button
+                    x:Name="TaskBtn"
+                    Grid.Column="0"
+                    Width="110"
+                    Height="60"
+                    Margin="5,0,0,0"
+                    Padding="0,3,0,0"
+                    VerticalAlignment="Bottom"
+                    HorizontalContentAlignment="Center"
+                    Background="#FAFAFB"
+                    Click="OnImport"
+                    Content="检测计划"
+                    Cursor="Hand"
+                    Style="{StaticResource ButtonStyle}"
+                    Tag="\Assets\task.png" />
+                <Button
+                    x:Name="ScanBtn"
+                    Grid.Column="1"
+                    Width="110"
+                    Height="60"
+                    Margin="5,0,0,0"
+                    Padding="0,3,0,0"
+                    VerticalAlignment="Bottom"
+                    HorizontalContentAlignment="Center"
+                    Background="#FAFAFB"
+                    Click="OnTask"
+                    Content="我的任务"
+                    Cursor="Hand"
+                    Style="{StaticResource ButtonStyle}"
+                    Tag="\Assets\renwu.png" />
+                <Button
+                    x:Name="checkBtn"
+                    Grid.Column="2"
+                    Width="110"
+                    Height="60"
+                    Margin="5,0,0,0"
+                    Padding="0,3,0,0"
+                    VerticalAlignment="Bottom"
+                    HorizontalContentAlignment="Center"
+                    Background="#FAFAFB"
+                    Click="OnMoniter"
+                    Content="数据回放"
+                    Cursor="Hand"
+                    Style="{StaticResource ButtonStyle}"
+                    Tag="\Assets\jiankong.png" />
+                <Button
+                    x:Name="brokeBtn"
+                    Grid.Column="3"
+                    Width="110"
+                    Height="60"
+                    Margin="5,0,0,0"
+                    Padding="0,3,0,0"
+                    VerticalAlignment="Bottom"
+                    HorizontalContentAlignment="Center"
+                    Background="#FAFAFB"
+                    Click="OnMoniter"
+                    Content="伤损监控"
+                    Cursor="Hand"
+                    Style="{StaticResource ButtonStyle}"
+                    Tag="\Assets\gaojing.png" />
+                <Button
+                    x:Name="queryBtn"
+                    Grid.Column="4"
+                    Width="110"
+                    Height="60"
+                    Margin="5,0,0,0"
+                    Padding="0,3,0,0"
+                    VerticalAlignment="Bottom"
+                    HorizontalContentAlignment="Center"
+                    Background="#FAFAFB"
+                    Click="OnQuery"
+                    Content="伤损对比分析"
+                    Cursor="Hand"
+                    Style="{StaticResource ButtonStyle}"
+                    Tag="\Assets\chaxun.png" />
+
+                <!--<Button x:Name="deliverBtn" Visibility="Hidden" Grid.Column="4" Height="60" Width="110"  Margin="5,0,0,0" Padding="0,3,0,0"   VerticalAlignment="Bottom" Style="{StaticResource ButtonStyle}" Tag ="\Assets\churu.png" HorizontalContentAlignment="Center"  Background="#FAFAFB" Content="实验室设备" Cursor="Hand"   Click="OnEquipment" >
+                </Button>-->
+                <Button
+                    x:Name="configBtn"
+                    Grid.Column="5"
+                    Width="110"
+                    Height="60"
+                    Margin="5,0,0,0"
+                    Padding="0,3,0,0"
+                    VerticalAlignment="Bottom"
+                    HorizontalContentAlignment="Center"
+                    Background="#FAFAFB"
+                    Click="OnConfig"
+                    Content="基础数据"
+                    Cursor="Hand"
+                    Style="{StaticResource ButtonStyle}"
+                    Tag="\Assets\setting.png" />
+                <!--<Button x:Name="lockBtn"   Grid.Column="6" Height="60" Width="110"  Margin="5,0,0,0" Padding="0,3,0,0"   VerticalAlignment="Bottom" Style="{StaticResource ButtonStyle}" Tag ="\Assets\lock.png" HorizontalContentAlignment="Center"  Background="#FAFAFB" Content="锁屏" Cursor="Hand">
+                </Button>-->
+                <Button
+                    x:Name="helpBtn"
+                    Grid.Column="6"
+                    Width="110"
+                    Height="60"
+                    Margin="5,0,0,0"
+                    Padding="0,3,0,0"
+                    VerticalAlignment="Bottom"
+                    HorizontalContentAlignment="Center"
+                    Background="#FAFAFB"
+                    Content="帮助"
+                    Cursor="Hand"
+                    Style="{StaticResource ButtonStyle}"
+                    Tag="\Assets\help.png" />
+                <Button
+                    x:Name="aboutBtn"
+                    Grid.Column="7"
+                    Width="110"
+                    Height="60"
+                    Margin="5,0,0,0"
+                    Padding="0,3,0,0"
+                    VerticalAlignment="Bottom"
+                    HorizontalContentAlignment="Center"
+                    Background="#FAFAFB"
+                    Content="关于"
+                    Cursor="Hand"
+                    Style="{StaticResource ButtonStyle}"
+                    Tag="\Assets\guanyu.png" />
+
+            </Grid>
+            <Grid Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image
+                    x:Name="minBut"
+                    Grid.Column="0"
+                    Width="30"
+                    Height="30"
+                    VerticalAlignment="Center"
+                    Cursor="Hand"
+                    MouseEnter="set_MouseEnter"
+                    MouseLeave="set_MouseLeave"
+                    MouseLeftButtonDown="Min_ButtonDown"
+                    Source="\Assets\min.png" />
+
+                <Image
+                    x:Name="maxBut"
+                    Grid.Column="1"
+                    Width="30"
+                    Height="30"
+                    VerticalAlignment="Center"
+                    Cursor="Hand"
+                    MouseEnter="set_MouseEnter"
+                    MouseLeave="set_MouseLeave"
+                    MouseLeftButtonDown="Max_ButtonDown"
+                    Source="\Assets\max.png" />
+                <Image
+                    Grid.Column="2"
+                    Width="30"
+                    Height="30"
+                    Cursor="Hand"
+                    MouseLeftButtonDown="Close_ButtonDown"
+                    RenderTransformOrigin="0.5,0.5"
+                    Source="\Assets\guanbi.png">
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="imgTransform" Angle="0" CenterX="0" CenterY="0" />
+                    </Image.RenderTransform>
+                    <Image.Triggers>
+                        <EventTrigger RoutedEvent="Image.MouseEnter">
+                            <BeginStoryboard HandoffBehavior="Compose">
+                                <Storyboard>
+                                    <DoubleAnimation
+                                        By="180"
+                                        Storyboard.TargetName="imgTransform"
+                                        Storyboard.TargetProperty="Angle"
+                                        Duration="0:0:.5" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Image.Triggers>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid
+            x:Name="contentPane"
+            Grid.Row="1"
+            Margin="5,5,5,5"
+            Background="Silver" />
+    </Grid>
+</local:BaseWindow>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="A07DbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MyTable1">
+    <Key>
+      <PropertyRef Name="学号" />
+    </Key>
+    <Property Name="学号" Type="Int32" Nullable="false" />
+    <Property Name="姓名" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="性别" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="专业" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="宿舍号" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="A07DbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MyTable1" EntityType="Self.MyTable1" />
+  </EntityContainer>
+</Schema>

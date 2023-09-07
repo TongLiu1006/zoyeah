@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDb1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CJ">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="学号" Type="String" MaxLength="8" FixedLength="true" Unicode="true" />
+    <Property Name="课程编码" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+    <Property Name="学年学期" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+    <Property Name="修读类别" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="成绩" Type="Int32" />
+    <Property Name="备注" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="KC">
+    <Key>
+      <PropertyRef Name="课程编码" />
+    </Key>
+    <Property Name="课程编码" Type="String" MaxLength="6" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="课程名称" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="课程类别" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="学号" />
+    </Key>
+    <Property Name="学号" Type="String" MaxLength="8" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="姓名" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="性别" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="出生日期" Type="DateTime" Precision="0" />
+    <Property Name="照片" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="MyDb1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CJ" EntityType="Self.CJ" />
+    <EntitySet Name="KC" EntityType="Self.KC" />
+    <EntitySet Name="Student" EntityType="Self.Student" />
+  </EntityContainer>
+</Schema>

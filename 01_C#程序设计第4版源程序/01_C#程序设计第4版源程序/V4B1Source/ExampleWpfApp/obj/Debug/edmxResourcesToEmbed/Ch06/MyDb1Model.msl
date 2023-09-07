@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyDb1ModelStoreContainer" CdmEntityContainer="MyDb1Entities">
+    <EntitySetMapping Name="CJ">
+      <EntityTypeMapping TypeName="MyDb1Model.CJ">
+        <MappingFragment StoreEntitySet="CJ">
+          <ScalarProperty Name="备注" ColumnName="备注" />
+          <ScalarProperty Name="成绩" ColumnName="成绩" />
+          <ScalarProperty Name="修读类别" ColumnName="修读类别" />
+          <ScalarProperty Name="学年学期" ColumnName="学年学期" />
+          <ScalarProperty Name="课程编码" ColumnName="课程编码" />
+          <ScalarProperty Name="学号" ColumnName="学号" />
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KC">
+      <EntityTypeMapping TypeName="MyDb1Model.KC">
+        <MappingFragment StoreEntitySet="KC">
+          <ScalarProperty Name="课程类别" ColumnName="课程类别" />
+          <ScalarProperty Name="课程名称" ColumnName="课程名称" />
+          <ScalarProperty Name="课程编码" ColumnName="课程编码" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Student">
+      <EntityTypeMapping TypeName="MyDb1Model.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="照片" ColumnName="照片" />
+          <ScalarProperty Name="出生日期" ColumnName="出生日期" />
+          <ScalarProperty Name="性别" ColumnName="性别" />
+          <ScalarProperty Name="姓名" ColumnName="姓名" />
+          <ScalarProperty Name="学号" ColumnName="学号" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

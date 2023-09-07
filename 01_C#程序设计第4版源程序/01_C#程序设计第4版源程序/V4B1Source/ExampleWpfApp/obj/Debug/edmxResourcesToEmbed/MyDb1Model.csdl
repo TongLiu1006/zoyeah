@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDb1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CJ">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="XueHao" Type="String" MaxLength="8" FixedLength="true" Unicode="true" />
+    <Property Name="KCBianMa" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+    <Property Name="XueNianXueQi" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+    <Property Name="XiuDuLeiBie" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ChengJi" Type="Int32" />
+    <Property Name="BeiZhu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="KC">
+    <Key>
+      <PropertyRef Name="KCBianMa" />
+    </Key>
+    <Property Name="KCBianMa" Type="String" MaxLength="3" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="KCMingCheng" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KCLeiBie" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="XueHao" />
+    </Key>
+    <Property Name="XueHao" Type="String" MaxLength="8" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="XingMing" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="XingBie" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="ChuShengRiQi" Type="DateTime" Precision="0" />
+    <Property Name="ZhaoPian" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="MyDb1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CJ" EntityType="Self.CJ" />
+    <EntitySet Name="KC" EntityType="Self.KC" />
+    <EntitySet Name="Student" EntityType="Self.Student" />
+  </EntityContainer>
+</Schema>

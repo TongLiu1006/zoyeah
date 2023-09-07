@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyDb1ModelStoreContainer" CdmEntityContainer="MyDb1Entities">
+    <EntitySetMapping Name="CJ">
+      <EntityTypeMapping TypeName="MyDb1Model.CJ">
+        <MappingFragment StoreEntitySet="CJ">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="XueHao" ColumnName="XueHao" />
+          <ScalarProperty Name="KCBianMa" ColumnName="KCBianMa" />
+          <ScalarProperty Name="XueNianXueQi" ColumnName="XueNianXueQi" />
+          <ScalarProperty Name="XiuDuLeiBie" ColumnName="XiuDuLeiBie" />
+          <ScalarProperty Name="ChengJi" ColumnName="ChengJi" />
+          <ScalarProperty Name="BeiZhu" ColumnName="BeiZhu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KC">
+      <EntityTypeMapping TypeName="MyDb1Model.KC">
+        <MappingFragment StoreEntitySet="KC">
+          <ScalarProperty Name="KCBianMa" ColumnName="KCBianMa" />
+          <ScalarProperty Name="KCMingCheng" ColumnName="KCMingCheng" />
+          <ScalarProperty Name="KCLeiBie" ColumnName="KCLeiBie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Student">
+      <EntityTypeMapping TypeName="MyDb1Model.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="XueHao" ColumnName="XueHao" />
+          <ScalarProperty Name="XingMing" ColumnName="XingMing" />
+          <ScalarProperty Name="XingBie" ColumnName="XingBie" />
+          <ScalarProperty Name="ChuShengRiQi" ColumnName="ChuShengRiQi" />
+          <ScalarProperty Name="ZhaoPian" ColumnName="ZhaoPian" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
