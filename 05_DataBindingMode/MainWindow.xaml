@@ -44,13 +44,13 @@
 
             <TextBlock Width="248" Height="24" Text="改变背景色:" />
 
-            <TextBlock Width="248" Height="24" Text="{Binding ElementName=listColor, Path=SelectedItem.Content, Mode=OneWay}"
+            <TextBox Width="248" Height="24" Text="{Binding ElementName=listColor, Path=SelectedItem.Content, Mode=OneWay}"
 
                        Background="{Binding ElementName=listColor, Path=SelectedItem.Content, Mode=OneWay}">
 
 
 
-            </TextBlock>
+            </TextBox>
 
             <TextBox Name="txtTwoWay" Text="{Binding ElementName=listColor,Path=SelectedItem.Content,Mode=TwoWay}"
 

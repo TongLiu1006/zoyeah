@@ -38,3 +38,13 @@ C:\liujuan\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V
 C:\liujuan\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\obj\Debug\ExampleConsoleApp.csproj.CopyComplete
 C:\liujuan\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\obj\Debug\ExampleConsoleApp.exe
 C:\liujuan\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\obj\Debug\ExampleConsoleApp.pdb
+C:\liujuan\zoyeah\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\bin\Debug\ExampleConsoleApp.exe.config
+C:\liujuan\zoyeah\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\bin\Debug\ExampleConsoleApp.exe
+C:\liujuan\zoyeah\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\bin\Debug\ExampleConsoleApp.pdb
+C:\liujuan\zoyeah\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\bin\Debug\Wpfz.dll
+C:\liujuan\zoyeah\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\bin\Debug\Wpfz.pdb
+C:\liujuan\zoyeah\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\obj\Debug\ExampleConsoleApp.csproj.AssemblyReference.cache
+C:\liujuan\zoyeah\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\obj\Debug\ExampleConsoleApp.csproj.CoreCompileInputs.cache
+C:\liujuan\zoyeah\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\obj\Debug\ExampleConsoleApp.csproj.CopyComplete
+C:\liujuan\zoyeah\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\obj\Debug\ExampleConsoleApp.exe
+C:\liujuan\zoyeah\01_C#程序设计第4版源程序\01_C#程序设计第4版源程序\V4B1Source\ExampleConsoleApp\obj\Debug\ExampleConsoleApp.pdb

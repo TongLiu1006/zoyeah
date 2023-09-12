@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\liujuan\\Test\\WpfUI\\WpfUI.csproj",
+      "projectUniqueName": "C:\\liujuan\\zoyeah\\WpfUI\\WpfUI.csproj",
       "projectName": "WpfUI",
-      "projectPath": "C:\\liujuan\\Test\\WpfUI\\WpfUI.csproj",
+      "projectPath": "C:\\liujuan\\zoyeah\\WpfUI\\WpfUI.csproj",
       "packagesPath": "C:\\Users\\wxhfc\\.nuget\\packages\\",
-      "outputPath": "C:\\liujuan\\Test\\WpfUI\\obj\\",
+      "outputPath": "C:\\liujuan\\zoyeah\\WpfUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wxhfc\\AppData\\Roaming\\NuGet\\NuGet.Config",
