@@ -7,4 +7,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\drive.jpg" />
+    <None Remove="Images\file.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\drive.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\file.jpg" />
+  </ItemGroup>
+
 </Project>
