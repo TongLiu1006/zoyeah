@@ -1,0 +1,272 @@
+﻿<UserControl
+    x:Class="SmartDetection.UI.components.importPlanCom.detailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SmartDetection.UI.components.importPlanCom"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label
+            Grid.Row="0"
+            VerticalAlignment="Center"
+            Content=" 探伤计划明细">
+        </Label>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0">铁路局：</Label>
+            <Label Grid.Column="1">上海铁路局</Label>
+            <Label Grid.Column="2">工务段</Label>
+            <Label Grid.Column="3">上海大型养路机</Label>
+            <Label Grid.Column="4">探伤车间</Label>
+            <Label Grid.Column="5">上海大机探伤车</Label>
+            <Label Grid.Column="6">探伤车间</Label>
+            <Label Grid.Column="7">上海大机探伤车</Label>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0">工作日期：</Label>
+            <Label Grid.Column="1">2023年3月6日</Label>
+            <Label Grid.Column="2">探伤班组</Label>
+            <Label Grid.Column="3">探伤四工班</Label>
+            <Label Grid.Column="4">线别</Label>
+            <Label Grid.Column="5">线别</Label>
+            <Label Grid.Column="6">行别</Label>
+            <Label Grid.Column="7">上行</Label>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0">线名：</Label>
+            <Label Grid.Column="1">杭昌高速</Label>
+            <Label Grid.Column="2">探伤内容</Label>
+            <Label Grid.Column="3">钢轨探伤</Label>
+            <Label Grid.Column="4">起点里程（Km)</Label>
+            <Label Grid.Column="5">83.455</Label>
+            <Label Grid.Column="6">终点里程（Km)</Label>
+            <Label Grid.Column="7">272.751</Label>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0">钢轨（Km)：</Label>
+            <Label Grid.Column="1">89.296</Label>
+            <Label Grid.Column="2">车站</Label>
+            <Label Grid.Column="3">-</Label>
+            <Label Grid.Column="4">录入人</Label>
+            <Label Grid.Column="5">张工</Label>
+            <Label Grid.Column="6">录入时间</Label>
+            <Label Grid.Column="7">2023年7月26日</Label>
+        </Grid>
+        <Grid Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0">股道号：</Label>
+            <Label Grid.Column="1">-</Label>
+            <Label Grid.Column="2">道岔号</Label>
+            <Label Grid.Column="3">-</Label>
+            <Label Grid.Column="4">焊缝编号</Label>
+            <Label Grid.Column="5">-</Label>
+            <Label Grid.Column="6">厂闪光焊(个)</Label>
+            <Label Grid.Column="7">-</Label>
+        </Grid>
+        <Grid Grid.Row="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0">气压焊(个)：</Label>
+            <Label Grid.Column="1">-</Label>
+            <Label Grid.Column="2">现闪光焊(个)</Label>
+            <Label Grid.Column="3">-</Label>
+            <Label Grid.Column="4">铝热焊(个)</Label>
+            <Label Grid.Column="5">-</Label>
+            <Label Grid.Column="6">电弧焊(个)</Label>
+            <Label Grid.Column="7">-</Label>
+        </Grid>
+        <Grid Grid.Row="7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0">可动心岔(组)：</Label>
+            <Label Grid.Column="1">-</Label>
+            <Label Grid.Column="2">合金钢岔(组)</Label>
+            <Label Grid.Column="3">-</Label>
+            <Label Grid.Column="4">高锰钢岔(组)</Label>
+            <Label Grid.Column="5">-</Label>
+            <Label Grid.Column="6">车站</Label>
+            <Label Grid.Column="7">-</Label>
+        </Grid>
+        <Grid Grid.Row="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0">回放人员：</Label>
+            <Label Grid.Column="1">张工、王工、赵工</Label>
+        </Grid>
+        <Grid Grid.Row="9">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition>
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button
+                Width="100"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                返回
+            </Button>
+        </Grid>
+    </Grid>
+</UserControl>

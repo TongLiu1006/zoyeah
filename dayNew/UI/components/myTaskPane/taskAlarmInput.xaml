@@ -1,0 +1,134 @@
+﻿<UserControl x:Class="SmartDetection.UI.components.myTaskPane.taskAlarmInput"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SmartDetection.UI.components.myTaskPane"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      >
+
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Content="伤损报警录入" VerticalAlignment="Center" Grid.Row="0"></Label>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="线路" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+                <Label Grid.Column="1" Content="京沪高速" VerticalAlignment="Center" ></Label>
+                <Label Grid.Column="2" VerticalAlignment="Center" Content="行别" HorizontalAlignment="Right"></Label>
+                <Label Grid.Column="3" VerticalAlignment="Center" Content="下行"></Label>
+                <Label Grid.Column="4" VerticalAlignment="Center" Content="日期:" HorizontalAlignment="Right"></Label>
+                <Label Grid.Column="5" VerticalAlignment="Center" Content="2023年8月31日"></Label>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="起点里程（Km)" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+                <Label Grid.Column="1" Content="1000.455" VerticalAlignment="Center" ></Label>
+                <Label Grid.Column="2" VerticalAlignment="Center" Content="终点里程（Km)" HorizontalAlignment="Right"></Label>
+                <Label Grid.Column="3" VerticalAlignment="Center" Content="1300.751"></Label>
+                <Label Grid.Column="4" VerticalAlignment="Center" Content="检测区间:" HorizontalAlignment="Right"></Label>
+                <Label Grid.Column="5" VerticalAlignment="Center" Content="何家湾Ⅱ场～封浜"></Label>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="分析时间" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+                <Label Grid.Column="1" Content="取系统当前时间" VerticalAlignment="Center" ></Label>
+                <Label Grid.Column="2" VerticalAlignment="Center" Content="分析人" HorizontalAlignment="Right"></Label>
+                <Label Grid.Column="3" VerticalAlignment="Center" Content="取系统当前用户"></Label>
+                <Label Grid.Column="4" VerticalAlignment="Center" Content="分析工作量:" HorizontalAlignment="Right"></Label>
+                <Label Grid.Column="5" VerticalAlignment="Center" Content="李工：起始里程（83.455~150.55）km；"></Label>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="工务段" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+                <Label Grid.Column="1" Content="宁波工务段" VerticalAlignment="Center" ></Label>
+                <Label Grid.Column="2" VerticalAlignment="Center" Content="伤损里程点（Km)" HorizontalAlignment="Right"></Label>
+                <TextBox Grid.Column="3" VerticalAlignment="Center" ></TextBox>
+                <Label Grid.Column="4" VerticalAlignment="Center" Content="伤损等级:" HorizontalAlignment="Right"></Label>
+                <TextBox Grid.Column="5" VerticalAlignment="Center"></TextBox>
+            </Grid>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="股别" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+                <ComboBox Grid.Column="1" VerticalAlignment="Center" ></ComboBox>
+                <Label Grid.Column="2" VerticalAlignment="Center" Content="伤损类型" HorizontalAlignment="Right"></Label>
+                <ComboBox Grid.Column="3" VerticalAlignment="Center" ></ComboBox>
+                <Label Grid.Column="4" VerticalAlignment="Center" Content="伤损位置:" HorizontalAlignment="Right"></Label>
+                <TextBox Grid.Column="5" VerticalAlignment="Center"></TextBox>
+            </Grid>
+            <Grid Grid.Row="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="参考尺寸(mm)" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+                <TextBox Grid.Column="1" VerticalAlignment="Center" ></TextBox>
+                <Label Grid.Column="2" VerticalAlignment="Center" Content="伤损具体情况" HorizontalAlignment="Right"></Label>
+                <TextBox Grid.Column="3" VerticalAlignment="Center" ></TextBox>
+                <Label Grid.Column="4" VerticalAlignment="Center" Content="伤损报警截图:" HorizontalAlignment="Right"></Label>
+                <Button Grid.Column="5" VerticalAlignment="Center" Content="请选择(按ctrl多选)…" ></Button>
+            </Grid>
+            <Grid Grid.Row="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" VerticalAlignment="Center" Content="保存" Width="100"></Button>
+                <Button Grid.Column="1" VerticalAlignment="Center" Content="取消" Width="100"></Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

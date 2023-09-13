@@ -1,0 +1,218 @@
+﻿<UserControl
+    x:Class="SmartDetection.UI.components.importPlanCom.TaskAssignment"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SmartDetection.UI.components.importPlanCom"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50">
+            </RowDefinition>
+            <RowDefinition Height="50">
+            </RowDefinition>
+            <RowDefinition Height="50">
+            </RowDefinition>
+            <RowDefinition Height="*">
+            </RowDefinition>
+            <RowDefinition Height="50">
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Label
+            Grid.Row="0"
+            VerticalAlignment="Center"
+            Content="检测数据分析任务工作分配" />
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label VerticalAlignment="Center" Content="线名">
+            </Label>
+            <Label
+                Grid.Column="1"
+                VerticalAlignment="Center"
+                Content="杭昌高速">
+            </Label>
+            <Label
+                Grid.Column="2"
+                VerticalAlignment="Center"
+                Content="线别">
+            </Label>
+            <Label
+                Grid.Column="3"
+                VerticalAlignment="Center"
+                Content="线别">
+            </Label>
+            <Label
+                Grid.Column="4"
+                VerticalAlignment="Center"
+                Content="行别">
+            </Label>
+            <Label
+                Grid.Column="5"
+                VerticalAlignment="Center"
+                Content="上行">
+            </Label>
+            <Label
+                Grid.Column="6"
+                VerticalAlignment="Center"
+                Content="探伤班组">
+            </Label>
+            <Label
+                Grid.Column="7"
+                VerticalAlignment="Center"
+                Content="探伤四工班">
+            </Label>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="2*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label VerticalAlignment="Center" Content="工作日期">
+            </Label>
+            <Label
+                Grid.Column="1"
+                VerticalAlignment="Center"
+                Content="2023年3月6日">
+            </Label>
+            <Label
+                Grid.Column="2"
+                VerticalAlignment="Center"
+                Content="起点里程（Km)">
+            </Label>
+            <Label
+                Grid.Column="3"
+                VerticalAlignment="Center"
+                Content="83.455">
+            </Label>
+            <Label
+                Grid.Column="4"
+                VerticalAlignment="Center"
+                Content="终点里程（Km)">
+            </Label>
+            <Label
+                Grid.Column="5"
+                VerticalAlignment="Center"
+                Content="272.751">
+            </Label>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100">
+                </ColumnDefinition>
+                <ColumnDefinition Width="*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                
+                <Label VerticalAlignment="Top" Content="回放人员：">
+                </Label>
+                <!--<Button Content="添加" Height="30" VerticalAlignment="Bottom" Click="Button_Click">
+                </Button>
+                <Button Content="打印" Height="30" VerticalAlignment="Center" Click="Button_Click_1" >
+                </Button>-->
+            </Grid>
+            
+            <Grid Grid.Column="1">
+                <ItemsControl Name="PlayBackPerson" Grid.Row="1">
+                    <ItemsControl.Template>
+                        <ControlTemplate TargetType="ItemsControl">
+                            <ItemsPresenter></ItemsPresenter>
+                        </ControlTemplate>
+                    </ItemsControl.Template>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="0 5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.3*">
+                                    </ColumnDefinition>
+                                    <ColumnDefinition Width="0.5*">
+                                    </ColumnDefinition>
+                                    <ColumnDefinition Width="1*">
+                                    </ColumnDefinition>
+                                    <ColumnDefinition Width="1*">
+                                    </ColumnDefinition>
+                                    <ColumnDefinition Width="1*">
+                                    </ColumnDefinition>
+                                    <ColumnDefinition Width="1*">
+                                    </ColumnDefinition>
+                                    <ColumnDefinition Width="1*">
+                                    </ColumnDefinition>
+                                    <ColumnDefinition Width="1*">
+                                    </ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <CheckBox
+                                    Grid.Column="0"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center" 
+                                />
+                                <Label Grid.Column="1" Content="{Binding name}"></Label>
+                                <Label Grid.Column="2">起点里程（Km)</Label>
+                                <TextBox Grid.Column="3" Text="{Binding name}"></TextBox>
+                                <Label Grid.Column="4">终点里程（Km)</Label>
+                                <TextBox Grid.Column="5"></TextBox>
+                                <Label Grid.Column="6">检测区间</Label>
+                                <TextBox Grid.Column="7"></TextBox>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100">
+                </ColumnDefinition>
+                <ColumnDefinition Width="100">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button
+                Grid.Column="0"
+                Width="50"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Content="确认" />
+            <Button
+                Grid.Column="1"
+                Width="50"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Content="取消" />
+        </Grid>
+    </Grid>
+</UserControl>

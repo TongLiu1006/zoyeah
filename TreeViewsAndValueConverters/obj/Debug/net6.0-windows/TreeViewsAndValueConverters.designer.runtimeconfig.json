@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\86183\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\86183\\.nuget\\packages",
-      "D:\\software\\Vistual_Studio_SDK\\NuGetPackages"
+      "C:\\Users\\wxhfc\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\wxhfc\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

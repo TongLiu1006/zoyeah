@@ -1,0 +1,2 @@
+C:\liujuan\zoyeah\RestSharpDemo-master\APITests\obj\Debug\APITests.csproj.AssemblyReference.cache
+C:\liujuan\zoyeah\RestSharpDemo-master\APITests\obj\Debug\APITests.csproj.CoreCompileInputs.cache

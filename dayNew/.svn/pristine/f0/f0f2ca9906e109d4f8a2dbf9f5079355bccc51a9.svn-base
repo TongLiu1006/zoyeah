@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PowerData.themes">
+    <Style x:Key="showTips" TargetType="{x:Type TextBox}">
+        <Style.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="Text" Value=""/>
+                    <Condition Property="TextBox.IsFocused" Value="false"/>
+                </MultiTrigger.Conditions>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate>
+                            <Border BorderThickness="1" BorderBrush="#FFEBF2F9" Margin="0,0,0,0">
+                                <TextBlock x:Name="MainTextBlock"  FontSize="18" Background="White" Text="{TemplateBinding TextBox.Tag}" Width="{TemplateBinding TextBox.ActualWidth}"  Height="{TemplateBinding TextBox.ActualHeight}"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </MultiTrigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>
