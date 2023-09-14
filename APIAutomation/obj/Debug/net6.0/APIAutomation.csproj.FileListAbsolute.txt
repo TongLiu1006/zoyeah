@@ -11,3 +11,16 @@ D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.dll
 D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\refint\APIAutomation.dll
 D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.pdb
 D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\ref\APIAutomation.dll
+C:\liujuan\zoyeah\APIAutomation\bin\Debug\net6.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+C:\liujuan\zoyeah\APIAutomation\bin\Debug\net6.0\APIAutomation.deps.json
+C:\liujuan\zoyeah\APIAutomation\bin\Debug\net6.0\APIAutomation.dll
+C:\liujuan\zoyeah\APIAutomation\bin\Debug\net6.0\APIAutomation.pdb
+C:\liujuan\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.csproj.AssemblyReference.cache
+C:\liujuan\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.GeneratedMSBuildEditorConfig.editorconfig
+C:\liujuan\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.AssemblyInfoInputs.cache
+C:\liujuan\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.AssemblyInfo.cs
+C:\liujuan\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.csproj.CoreCompileInputs.cache
+C:\liujuan\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.dll
+C:\liujuan\zoyeah\APIAutomation\obj\Debug\net6.0\refint\APIAutomation.dll
+C:\liujuan\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.pdb
+C:\liujuan\zoyeah\APIAutomation\obj\Debug\net6.0\ref\APIAutomation.dll

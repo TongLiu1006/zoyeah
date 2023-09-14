@@ -85,7 +85,7 @@ namespace APITests
 
             var api = new Demo();
             var response = await api.CreateNewUser(BASE_URL, payload);
-            statusCode = response.get_StatusCode();
+            statusCode = response.StatusCode;
             var code = (int)statusCode;
             Assert.AreEqual(201, code);
             Reporter.LogToReport(Status.Pass, "201 response code is received");

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Jane\\zoyeah\\Test\\Test.csproj": {}
+    "C:\\liujuan\\zoyeah\\Test\\Test.csproj": {}
   },
   "projects": {
-    "D:\\Jane\\zoyeah\\APIAutomation\\APIAutomation.csproj": {
+    "C:\\liujuan\\zoyeah\\APIAutomation\\APIAutomation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Jane\\zoyeah\\APIAutomation\\APIAutomation.csproj",
+        "projectUniqueName": "C:\\liujuan\\zoyeah\\APIAutomation\\APIAutomation.csproj",
         "projectName": "APIAutomation",
-        "projectPath": "D:\\Jane\\zoyeah\\APIAutomation\\APIAutomation.csproj",
-        "packagesPath": "C:\\Users\\86183\\.nuget\\packages\\",
-        "outputPath": "D:\\Jane\\zoyeah\\APIAutomation\\obj\\",
+        "projectPath": "C:\\liujuan\\zoyeah\\APIAutomation\\APIAutomation.csproj",
+        "packagesPath": "C:\\Users\\wxhfc\\.nuget\\packages\\",
+        "outputPath": "C:\\liujuan\\zoyeah\\APIAutomation\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\software\\Vistual_Studio_SDK\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\86183\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\wxhfc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -45,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.16.3, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -82,25 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Jane\\zoyeah\\Test\\Test.csproj": {
+    "C:\\liujuan\\zoyeah\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Jane\\zoyeah\\Test\\Test.csproj",
+        "projectUniqueName": "C:\\liujuan\\zoyeah\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "D:\\Jane\\zoyeah\\Test\\Test.csproj",
-        "packagesPath": "C:\\Users\\86183\\.nuget\\packages\\",
-        "outputPath": "D:\\Jane\\zoyeah\\Test\\obj\\",
+        "projectPath": "C:\\liujuan\\zoyeah\\Test\\Test.csproj",
+        "packagesPath": "C:\\Users\\wxhfc\\.nuget\\packages\\",
+        "outputPath": "C:\\liujuan\\zoyeah\\Test\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\software\\Vistual_Studio_SDK\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\86183\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\wxhfc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,15 +103,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Jane\\zoyeah\\APIAutomation\\APIAutomation.csproj": {
-                "projectPath": "D:\\Jane\\zoyeah\\APIAutomation\\APIAutomation.csproj"
+              "C:\\liujuan\\zoyeah\\APIAutomation\\APIAutomation.csproj": {
+                "projectPath": "C:\\liujuan\\zoyeah\\APIAutomation\\APIAutomation.csproj"
               }
             }
           }
@@ -142,6 +136,10 @@
             "NUnit.Analyzers": {
               "target": "Package",
               "version": "[3.3.0, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.16.3, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
@@ -180,7 +178,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

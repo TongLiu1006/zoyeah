@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,11 +21,23 @@ namespace APIAutomation
             client = new RestClient(options);
             
         }
-        public async Task<RestResponse> CreateUser<T>(T payload) where T : class
+        public async Task<RestResponse> CreateUser<T>(string baseUrl,T payload) where T : class
         {
-            var request = new RestRequest(Endpoints.CREATE_USER,Method.Post);
+
+            var url = Path.Combine(baseUrl, Endpoints.CREATE_USER);
+            var client = new RestClient(url);
+
+            var request = new RestRequest()
+            {
+                Method = Method.Post
+            };
+            request.AddHeader("Accept", "application/json");
             request.AddBody(payload);
-            return await client.ExecuteAsync<T>(request);
+            //request.AddParameter("Content-Type", "application/json");
+           
+            request.RequestFormat=DataFormat.Json;
+            var response=await client.ExecuteAsync<T>(request);
+            return response;
         }
 
         public async Task<RestResponse> DeleteUser(string id)
@@ -60,6 +73,11 @@ namespace APIAutomation
             request.AddUrlSegment($"{id}", id);
             request.AddBody(payload);
             return await client.ExecuteAsync<T>(request);
+        }
+
+        public Task<RestResponse> CreateUser<T>(T payload) where T : class
+        {
+            throw new NotImplementedException();
         }
     }
 }

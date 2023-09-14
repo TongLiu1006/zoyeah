@@ -13,7 +13,7 @@ namespace RestSharpDemo
     {
         public static T GetContent<T>(RestResponse response)
         {
-            var content = response.get_Content();
+            var content = response.Content;
             return JsonConvert.DeserializeObject<T>(content);
         }
 

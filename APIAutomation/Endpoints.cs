@@ -8,7 +8,7 @@ namespace APIAutomation
 {
     public static class Endpoints
     {
-        public static readonly string CREATE_USER = "/api/users";
+        public static readonly string CREATE_USER = "api/users";
         public static readonly string UPDATE_USER = "/api/users/{id}";
         public static readonly string DELETE_USER = "/api/users/{id}";
         public static readonly string GET_USER = "/api/users/{id}";

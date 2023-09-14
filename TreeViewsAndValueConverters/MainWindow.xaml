@@ -19,10 +19,11 @@
                                                Source="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type TreeViewItem}},
                                             Path=Tag,
                                             Converter={x:Static local:HeaderToImageConverter.Instance}}"/>
-                                        <TextBlock VerticalAlignment="Center" Text="{Binding}"/>
+                                        <!--<TextBlock VerticalAlignment="Center" Text="{Binding}"/>-->
+                                    <Button Content="{Binding}"/>
 
-                                        
-                                    </StackPanel>
+
+                                </StackPanel>
                                 </DataTemplate>
                             </Setter.Value>
                         </Setter>

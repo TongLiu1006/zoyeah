@@ -3,8 +3,7 @@
 Create a user
 
 @tag1
-Scenario: [scenario name] 
-	Given [name] 
-	Given [job] 
+Scenario: [scenario CreteaUser.json] 
+	Given [payload"CreteaUser.json"]  
 	When [request]
 	Then [validate]

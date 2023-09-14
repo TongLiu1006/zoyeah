@@ -131,6 +131,9 @@
           "build/NUnit.props": {}
         }
       },
+      "NUnit.ConsoleRunner/3.16.3": {
+        "type": "package"
+      },
       "RestSharp/110.2.0": {
         "type": "package",
         "dependencies": {
@@ -1650,6 +1653,87 @@
         "lib/netstandard2.0/nunit.framework.xml",
         "nunit.3.13.1.nupkg.sha512",
         "nunit.nuspec"
+      ]
+    },
+    "NUnit.ConsoleRunner/3.16.3": {
+      "sha512": "bhc4f0oVdS70xLaulPu2dMuUWK6hLj5fWLWmUnvbxyEA9w41sZNe6Xb3vPkcp+5OrIqggmtcRbhX+o5hoz62Jg==",
+      "type": "package",
+      "path": "nunit.consolerunner/3.16.3",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "images/nunit_256.png",
+        "nunit.consolerunner.3.16.3.nupkg.sha512",
+        "nunit.consolerunner.nuspec",
+        "tools/agents/net20/nunit-agent-x86.exe",
+        "tools/agents/net20/nunit-agent-x86.exe.config",
+        "tools/agents/net20/nunit-agent.exe",
+        "tools/agents/net20/nunit-agent.exe.config",
+        "tools/agents/net20/nunit.agent.addins",
+        "tools/agents/net20/nunit.engine.api.dll",
+        "tools/agents/net20/nunit.engine.api.xml",
+        "tools/agents/net20/nunit.engine.core.dll",
+        "tools/agents/net20/testcentric.engine.metadata.dll",
+        "tools/agents/net462/nunit-agent-x86.exe",
+        "tools/agents/net462/nunit-agent-x86.exe.config",
+        "tools/agents/net462/nunit-agent.exe",
+        "tools/agents/net462/nunit-agent.exe.config",
+        "tools/agents/net462/nunit.agent.addins",
+        "tools/agents/net462/nunit.engine.api.dll",
+        "tools/agents/net462/nunit.engine.api.xml",
+        "tools/agents/net462/nunit.engine.core.dll",
+        "tools/agents/net462/testcentric.engine.metadata.dll",
+        "tools/agents/net5.0/Microsoft.Extensions.DependencyModel.dll",
+        "tools/agents/net5.0/nunit-agent.deps.json",
+        "tools/agents/net5.0/nunit-agent.dll",
+        "tools/agents/net5.0/nunit-agent.dll.config",
+        "tools/agents/net5.0/nunit-agent.runtimeconfig.json",
+        "tools/agents/net5.0/nunit.agent.addins",
+        "tools/agents/net5.0/nunit.engine.api.dll",
+        "tools/agents/net5.0/nunit.engine.api.xml",
+        "tools/agents/net5.0/nunit.engine.core.dll",
+        "tools/agents/net5.0/testcentric.engine.metadata.dll",
+        "tools/agents/net6.0/Microsoft.Extensions.DependencyModel.dll",
+        "tools/agents/net6.0/nunit-agent.deps.json",
+        "tools/agents/net6.0/nunit-agent.dll",
+        "tools/agents/net6.0/nunit-agent.dll.config",
+        "tools/agents/net6.0/nunit-agent.runtimeconfig.json",
+        "tools/agents/net6.0/nunit.agent.addins",
+        "tools/agents/net6.0/nunit.engine.api.dll",
+        "tools/agents/net6.0/nunit.engine.api.xml",
+        "tools/agents/net6.0/nunit.engine.core.dll",
+        "tools/agents/net6.0/testcentric.engine.metadata.dll",
+        "tools/agents/net7.0/Microsoft.Extensions.DependencyModel.dll",
+        "tools/agents/net7.0/nunit-agent.deps.json",
+        "tools/agents/net7.0/nunit-agent.dll",
+        "tools/agents/net7.0/nunit-agent.dll.config",
+        "tools/agents/net7.0/nunit-agent.runtimeconfig.json",
+        "tools/agents/net7.0/nunit.agent.addins",
+        "tools/agents/net7.0/nunit.engine.api.dll",
+        "tools/agents/net7.0/nunit.engine.api.xml",
+        "tools/agents/net7.0/nunit.engine.core.dll",
+        "tools/agents/net7.0/testcentric.engine.metadata.dll",
+        "tools/agents/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll",
+        "tools/agents/netcoreapp3.1/nunit-agent.deps.json",
+        "tools/agents/netcoreapp3.1/nunit-agent.dll",
+        "tools/agents/netcoreapp3.1/nunit-agent.dll.config",
+        "tools/agents/netcoreapp3.1/nunit-agent.runtimeconfig.json",
+        "tools/agents/netcoreapp3.1/nunit.agent.addins",
+        "tools/agents/netcoreapp3.1/nunit.engine.api.dll",
+        "tools/agents/netcoreapp3.1/nunit.engine.api.xml",
+        "tools/agents/netcoreapp3.1/nunit.engine.core.dll",
+        "tools/agents/netcoreapp3.1/testcentric.engine.metadata.dll",
+        "tools/nunit.console.nuget.addins",
+        "tools/nunit.engine.api.dll",
+        "tools/nunit.engine.api.xml",
+        "tools/nunit.engine.core.dll",
+        "tools/nunit.engine.dll",
+        "tools/nunit3-console.exe",
+        "tools/nunit3-console.exe.config",
+        "tools/testcentric.engine.metadata.dll"
       ]
     },
     "RestSharp/110.2.0": {
@@ -4868,6 +4952,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "NUnit.ConsoleRunner >= 3.16.3",
       "Newtonsoft.Json >= 13.0.3",
       "RestSharp >= 110.2.0",
       "SpecFlow >= 3.9.74",
@@ -4876,24 +4961,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\86183\\.nuget\\packages\\": {},
-    "D:\\software\\Vistual_Studio_SDK\\NuGetPackages": {}
+    "C:\\Users\\wxhfc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Jane\\zoyeah\\APIAutomation\\APIAutomation.csproj",
+      "projectUniqueName": "C:\\liujuan\\zoyeah\\APIAutomation\\APIAutomation.csproj",
       "projectName": "APIAutomation",
-      "projectPath": "D:\\Jane\\zoyeah\\APIAutomation\\APIAutomation.csproj",
-      "packagesPath": "C:\\Users\\86183\\.nuget\\packages\\",
-      "outputPath": "D:\\Jane\\zoyeah\\APIAutomation\\obj\\",
+      "projectPath": "C:\\liujuan\\zoyeah\\APIAutomation\\APIAutomation.csproj",
+      "packagesPath": "C:\\Users\\wxhfc\\.nuget\\packages\\",
+      "outputPath": "C:\\liujuan\\zoyeah\\APIAutomation\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\software\\Vistual_Studio_SDK\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\86183\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\wxhfc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4901,8 +4981,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.nuget.org/api/v2": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -4920,6 +4999,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "NUnit.ConsoleRunner": {
+            "target": "Package",
+            "version": "[3.16.3, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
@@ -4957,7 +5040,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

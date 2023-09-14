@@ -1,5 +1,6 @@
 ﻿1.add extension broswer ,to add specflow.
 2.add speclow,specflow.nunit,specfic msbuild in nuget package.
+3.add Type json file  as payload here.
 
 
 2.1 how to use specflow file generate cs file:
@@ -7,3 +8,7 @@
 补充问题：新建的feature不包含cs文件，需要修改配置
 
 　　工具->选项->【SpecFlow】->将【Enable SpecFlowSingleFileGenerator】设置为true
+
+3.1 json file property must copy to output,so at runtime we can read file.
+
+

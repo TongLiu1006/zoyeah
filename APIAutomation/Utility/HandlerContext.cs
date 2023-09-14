@@ -15,8 +15,22 @@ namespace APIAutomation.Utility
 
             var context = response.Content;
 
-           return JsonConvert.DeserializeObject<T>(context);
+            var obj=JsonConvert.DeserializeObject<T>(context);
+            return obj;
 
+        }
+
+        public static T ParseJson<T>(string file)
+        {
+            return JsonConvert.DeserializeObject<T>(File.ReadAllText(file));
+        }
+
+        public static string GetFilePath(string name)
+        {
+           
+            string path = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory));
+            path=string.Format(path+"TestData\\{0}",name);
+            return path;
         }
     }
 }
