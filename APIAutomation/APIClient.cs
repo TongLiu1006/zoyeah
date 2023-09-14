@@ -10,10 +10,14 @@ namespace APIAutomation
     public class APIClient : IAPIClient, IDisposable
     {
         readonly RestClient client;
-        public APIClient(string baseUrl)
+        const string BASE_URL = "https://reqres.in/";
+        public APIClient()
         {
-            var options=new RestClientOptions(baseUrl);
-            client=new RestClient(options) 
+            var options = new RestClientOptions(BASE_URL)
+            {
+                Authenticator = new APIAuthenticator()
+            };
+            client = new RestClient(options);
             
         }
         public async Task<RestResponse> CreateUser<T>(T payload) where T : class

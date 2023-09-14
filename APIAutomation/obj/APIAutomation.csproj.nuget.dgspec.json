@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\liujuan\\zoyeah\\APIAutomation\\APIAutomation.csproj": {}
+    "D:\\Jane\\zoyeah\\APIAutomation\\APIAutomation.csproj": {}
   },
   "projects": {
-    "C:\\liujuan\\zoyeah\\APIAutomation\\APIAutomation.csproj": {
+    "D:\\Jane\\zoyeah\\APIAutomation\\APIAutomation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\liujuan\\zoyeah\\APIAutomation\\APIAutomation.csproj",
+        "projectUniqueName": "D:\\Jane\\zoyeah\\APIAutomation\\APIAutomation.csproj",
         "projectName": "APIAutomation",
-        "projectPath": "C:\\liujuan\\zoyeah\\APIAutomation\\APIAutomation.csproj",
-        "packagesPath": "C:\\Users\\wxhfc\\.nuget\\packages\\",
-        "outputPath": "C:\\liujuan\\zoyeah\\APIAutomation\\obj\\",
+        "projectPath": "D:\\Jane\\zoyeah\\APIAutomation\\APIAutomation.csproj",
+        "packagesPath": "C:\\Users\\86183\\.nuget\\packages\\",
+        "outputPath": "D:\\Jane\\zoyeah\\APIAutomation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\software\\Vistual_Studio_SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\wxhfc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\86183\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2": {}
         },
         "frameworks": {
           "net6.0": {
@@ -47,6 +52,18 @@
             "RestSharp": {
               "target": "Package",
               "version": "[110.2.0, )"
+            },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.9.74, )"
+            },
+            "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.9.74, )"
+            },
+            "SpecFlow.Tools.MsBuild.Generation": {
+              "target": "Package",
+              "version": "[3.9.74, )"
             }
           },
           "imports": [
@@ -65,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

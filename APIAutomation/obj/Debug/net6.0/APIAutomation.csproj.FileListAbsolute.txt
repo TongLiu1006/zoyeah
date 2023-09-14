@@ -1,0 +1,13 @@
+D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.csproj.AssemblyReference.cache
+D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.GeneratedMSBuildEditorConfig.editorconfig
+D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.AssemblyInfoInputs.cache
+D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.AssemblyInfo.cs
+D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.csproj.CoreCompileInputs.cache
+D:\Jane\zoyeah\APIAutomation\bin\Debug\net6.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+D:\Jane\zoyeah\APIAutomation\bin\Debug\net6.0\APIAutomation.deps.json
+D:\Jane\zoyeah\APIAutomation\bin\Debug\net6.0\APIAutomation.dll
+D:\Jane\zoyeah\APIAutomation\bin\Debug\net6.0\APIAutomation.pdb
+D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.dll
+D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\refint\APIAutomation.dll
+D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\APIAutomation.pdb
+D:\Jane\zoyeah\APIAutomation\obj\Debug\net6.0\ref\APIAutomation.dll
