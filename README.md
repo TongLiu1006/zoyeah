@@ -1,5 +1,13 @@
 # zoyeah
 
+9.15
+
+1.http client simply request is ok.but i don't know why use reashrp getansync like that? and Task<RestResponse<T>> is doing where and differ to Task<RestResponse>,
+but i know the back one mean.it symbolify that return type is  RestResponse and is a aynsc function to use.
+
+2.and then how to use MVVM model,and change data ,whiich two data can be change?
+
+
 
 9.5
 

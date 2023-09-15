@@ -11,7 +11,7 @@ namespace HttpClientAndRestSharp_Test
     public static class JsonHelp
     {
 
-        public static T GetContext<T>(RestResponse response)
+        public static T GetContext<T>(this RestResponse response)
         {
             var context = response.Content;
             return JsonConvert.DeserializeObject<T>(context);
@@ -27,5 +27,8 @@ namespace HttpClientAndRestSharp_Test
         {
             return JsonConvert.SerializeObject(context,Formatting.Indented);
         }
+
+
+
     }
 }

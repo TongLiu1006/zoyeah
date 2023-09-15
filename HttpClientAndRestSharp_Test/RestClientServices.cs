@@ -12,94 +12,77 @@ namespace HttpClientAndRestSharp_Test
     {
         private RestClient client;
         private RestRequest request;
-        public static string BASE_URL = "https://reqres.in/";
+        private string BASE_URL = "https://reqres.in/";
 
 
-        public RestClientServices(RestClient client)
+        public RestClientServices(RestClient client,string baseurl= "https://reqres.in/")
         {
             this.client = client;
+            this.BASE_URL = baseurl;
         }
 
-        public async Task<T> GetAsync<T>(BaseRequest baseRequest) where T : class
+        public async Task<RestResponse> GetAsync(BaseRequest baseRequest)
         {
             try
             {
-                var url = Path.Combine(BASE_URL,baseRequest.Url);
-                var method = baseRequest.Method;
-
-
-
-                request = new RestRequest(url, method);
-                //request.AddHeader("Content-Type", baseRequest.ContentType);
-                //var pp = Parameter.CreateParameter("page", 2, ParameterType.QueryString);
-                //request.AddParameter(pp);
-                request.AddHeaders(new Dictionary<string, string>
-            {
-                { "Accept", "application/json" },
-                { "Content-Type", "application/json" }
-
-            });
-                var response = await client.ExecuteAsync(request);
-                
-                //response.RootElement = "data";
-                if (response.StatusCode == HttpStatusCode.OK)
-                {
-                    
-                        return response;
-                }
-                if (response.ErrorException != null)
-                {
-                    return response.ErrorException.Message;
-                }
-
-                return response.ErrorMessage;
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-           
-            
-
-        }
-
-        public async Task<string> PostAsync<T>(BaseRequest baseRequest) where T : class
-        {
-            try
-            {
+                //get data from base request
                 var url = Path.Combine(BASE_URL, baseRequest.Url);
                 var method = baseRequest.Method;
-                var payload= baseRequest.Payload;
+                var header = baseRequest.Header;
+                var param = baseRequest.Parameter;
+                var paramType = baseRequest.ParameterType;
 
-
+                //set baserequest data into restrequest
                 request = new RestRequest(url, method);
-                request.AddHeader("Content-Type", "application/json");
-                request.AddBody(payload);
+                request.AddHeaders(header);
 
-                //request.AddParameter(Parameter.CreateParameter("page", 2, ParameterType.QueryString));
-
-                var response = await client.ExecutePostAsync<T>(request);
-                //response.RootElement = "data";
-                if (response.StatusCode == HttpStatusCode.OK)
+                if (param!=null)
                 {
-                    return response.Content;
-                }
-                if (response.ErrorException != null)
-                {
-                    return response.ErrorException.Message;
+                    foreach (var item in param)
+                    {
+                        request.AddParameter(item.Key, item.Value, paramType);
+                    }
                 }
 
-                return response.ErrorMessage;
             }
             catch (Exception)
+            { }
+            return await client.ExecuteAsync(request);
+
+        }
+
+        public async Task<RestResponse> PostAsync(BaseRequest baseRequest)
+        {
+            try
             {
+                //get data from base request
+                var url = Path.Combine(BASE_URL, baseRequest.Url);
+                var method = baseRequest.Method;
+                var header = baseRequest.Header;
+                var param = baseRequest.Parameter;
+                var paramType = baseRequest.ParameterType;
+                var payload = baseRequest.Payload == null ? null : baseRequest.Payload;
+                //set baserequest data into restrequest
+                request = new RestRequest(url, method);
+                request.AddHeaders(header);
 
-                throw;
+                
+                if (param!=null)
+                {
+                    foreach (var item in param)
+                    {
+                        request.AddParameter(item.Key, item.Value, paramType);
+                    }
+                }
+                //payload need user dataJson to Parse data Json Model
+                if (payload != null) request.AddBody(payload);
             }
-
-
+            catch (Exception)
+            { }
+      
+              return await client.ExecuteAsync(request);
         }
 
     }
+
 }

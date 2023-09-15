@@ -12,7 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using HttpClientAndRestSharp_Test;
+using HttpClientAndRestSHarp_Test_Instance.ResModel;
+using HttpClientAndRestSHarp_Test_Instance.UI;
+using Newtonsoft.Json;
 using RestSharp;
 
 namespace HttpClientAndRestSHarp_Test_Instance
@@ -22,32 +26,25 @@ namespace HttpClientAndRestSHarp_Test_Instance
     /// </summary>
     public partial class MainWindow : Window
     {
-        private BaseRequest baserequest;
-
-        private RestClient client=new RestClient();
-        
+     
         public MainWindow()
         {
             InitializeComponent();
-            
+
         }
 
-        private void clik_test(object sender, RoutedEventArgs e)
-        { 
-            baserequest = new BaseRequest()
-            {
-                Url = "api/user/2",
-                Method=RestSharp.Method.Get
-
-            };
-
-
-            var restClient=new RestClientServices(client);
-            var content=restClient.GetAsync<RestResponse>(baserequest);
-
+    
+        private void GetIntoUserTest(object sender, MouseButtonEventArgs e)
+        {
             
-            //var re = content.Result;
-            //text.Text = content.Result;
+            itemPane.Children.Clear();
+            itemPane.Children.Add(new UserInfo());
+        }
+
+        private void GetIntoSmartDectionTest(object sender, MouseButtonEventArgs e)
+        {
+            itemPane.Children.Clear();
+            itemPane.Children.Add(new SmartDetection());
         }
     }
 }

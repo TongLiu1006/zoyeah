@@ -7,10 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel>
-            
-        <TextBlock Width="120" Height="30" Margin="0 0 0 10" x:Name="text"/>
-        <Button Width="50" Height="20" Click="clik_test"/>
-        </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <WrapPanel Grid.Row="0">
+            <TextBlock x:Name="WebData_User" Text="WebData_User" MouseDown="GetIntoUserTest" Margin="0 5 10 0" Background="Beige"  />
+            <TextBlock x:Name="WebData_SmartDection"  Text="WebData_SmartDection" MouseDown="GetIntoSmartDectionTest" Margin="10 5 0 0" Background="AliceBlue" />
+        </WrapPanel>
+        <Grid x:Name="itemPane" Grid.Row="1"/>
     </Grid>
 </Window>

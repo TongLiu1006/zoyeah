@@ -8,12 +8,21 @@
     ".NETCoreApp,Version=v6.0": {
       "HttpClientAndRestSHarp_Test_Instance/1.0.0": {
         "dependencies": {
+          "CommunityToolkit.Mvvm": "8.2.1",
           "HttpClientAndRestSharp_Test": "1.0.0",
           "Newtonsoft.Json": "13.0.3",
           "RestSharp": "110.2.0"
         },
         "runtime": {
           "HttpClientAndRestSHarp_Test_Instance.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.1": {
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "assemblyVersion": "8.2.0.0",
+            "fileVersion": "8.2.1.1"
+          }
         }
       },
       "Newtonsoft.Json/13.0.3": {
@@ -69,6 +78,7 @@
       },
       "HttpClientAndRestSharp_Test/1.0.0": {
         "dependencies": {
+          "CommunityToolkit.Mvvm": "8.2.1",
           "Newtonsoft.Json": "13.0.3",
           "RestSharp": "110.2.0"
         },
@@ -83,6 +93,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CommunityToolkit.Mvvm/8.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I24ofWVEdplxYjUez9/bljv/qb8r8Ccj6cvYXHexNBegLaD3iDy3QrzAAOYVMmfGWIXxlU1ZtECQNfU07+6hXQ==",
+      "path": "communitytoolkit.mvvm/8.2.1",
+      "hashPath": "communitytoolkit.mvvm.8.2.1.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",

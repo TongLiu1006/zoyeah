@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "vm2tcpREvIUZoTg9POgOmyIQZ6kFqP8vfbot4D20aAkIek03oUAb68YqdGpSJBRFAE3hXFBhOAIQgSz5IWcirA==",
+  "dgSpecHash": "4zW2mZp5IBfR4ElpFNh00miiT+0WwGonF3hufRgJ+82/TP9PbhZQLwekctZeVrQCGBiO1gVN4fklR7FNCZSGlw==",
   "success": true,
-  "projectFilePath": "D:\\Jane\\zoyeah\\HttpClientAndRestSHarp_Test_Instance\\HttpClientAndRestSHarp_Test_Instance.csproj",
+  "projectFilePath": "C:\\liujuan\\zoyeah\\HttpClientAndRestSHarp_Test_Instance\\HttpClientAndRestSHarp_Test_Instance.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\86183\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\86183\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
-    "C:\\Users\\86183\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\86183\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\86183\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+    "C:\\Users\\wxhfc\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
+    "C:\\Users\\wxhfc\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\wxhfc\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\wxhfc\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\wxhfc\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\wxhfc\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
   ],
   "logs": []
 }

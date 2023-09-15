@@ -7,7 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="UI\SmartDetection.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\UserInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\SmartDetection.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\UserInfo.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

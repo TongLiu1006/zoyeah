@@ -10,3 +10,15 @@ D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSha
 D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\refint\HttpClientAndRestSharp_Test.dll
 D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.pdb
 D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\ref\HttpClientAndRestSharp_Test.dll
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.csproj.AssemblyReference.cache
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.AssemblyInfoInputs.cache
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.AssemblyInfo.cs
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.csproj.CoreCompileInputs.cache
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.dll
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\refint\HttpClientAndRestSharp_Test.dll
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.pdb
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\bin\Debug\net6.0\HttpClientAndRestSharp_Test.deps.json
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\bin\Debug\net6.0\HttpClientAndRestSharp_Test.dll
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\bin\Debug\net6.0\HttpClientAndRestSharp_Test.pdb
+C:\liujuan\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\ref\HttpClientAndRestSharp_Test.dll
