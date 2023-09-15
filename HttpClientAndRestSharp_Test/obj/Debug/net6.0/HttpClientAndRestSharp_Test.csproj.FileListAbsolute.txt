@@ -1,0 +1,12 @@
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\bin\Debug\net6.0\HttpClientAndRestSharp_Test.deps.json
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\bin\Debug\net6.0\HttpClientAndRestSharp_Test.dll
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\bin\Debug\net6.0\HttpClientAndRestSharp_Test.pdb
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.csproj.AssemblyReference.cache
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.AssemblyInfoInputs.cache
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.AssemblyInfo.cs
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.csproj.CoreCompileInputs.cache
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.dll
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\refint\HttpClientAndRestSharp_Test.dll
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\HttpClientAndRestSharp_Test.pdb
+D:\Jane\zoyeah\HttpClientAndRestSharp_Test\obj\Debug\net6.0\ref\HttpClientAndRestSharp_Test.dll
